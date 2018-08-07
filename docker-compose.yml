@@ -1,0 +1,22 @@
+version: '2'
+services:
+  aniq-mongodata:
+    image: mongo:3.2.10
+    volumes:
+      - /etc/mozea/docker/mongo/data/aniq:/data/db/aniq
+    command: --break-mongo
+  aniq-mongodb:
+    image: mongo:3.2.10
+    volumes_from:
+      - aniq-mongodata
+    ports:
+      - "27018:27018"
+    command: --smallfiles --port 27018
+  aniq-server:
+    image: server-app
+    volumes:
+      - /etc/mozea/docker/aniq/logs:/tmp/logs
+    ports:
+      - "443:5000"
+    links:
+      - aniq-mongodb

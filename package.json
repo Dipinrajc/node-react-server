@@ -1,0 +1,17 @@
+{
+  "name": "nodejs-server",
+  "version": "1.0.0",
+  "description": "NodeJs Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongodb": "^3.1.1",
+    "ssl-root-cas": "^1.1.10"
+  }
+}
