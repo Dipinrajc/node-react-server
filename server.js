@@ -27,7 +27,7 @@ httpServer.listen(port, hostname, () => {
   console.log(`Server running at https://${hostname}:${port}/`);
 });
 
-app.get('/', function (res) {
+app.get('/', function (req, res) {
   res.send('hello');
 });
 
