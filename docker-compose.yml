@@ -12,8 +12,8 @@ services:
     ports:
       - "27018:27018"
     command: --smallfiles --port 27018
-  aniq-server:
-    image: server-app
+  anique-api-app:
+    image: anique-api-app
     volumes:
       - /etc/mozea/docker/aniq/logs:/tmp/logs
     ports:

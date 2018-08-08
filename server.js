@@ -6,12 +6,12 @@ var MongoClient = require('mongodb').MongoClient;
 var express = require('express');
 var app = express();
 
-const hostname = '127.0.0.1';
+const hostname = '0.0.0.0';
 const port = 5000;
 
-//const mongoHost = 'mongodb://aniq-mongodb:27018/aniq';
+const mongoHost = 'mongodb://aniq-mongodb:27018/aniq';
 const cosmosHost = "mongodb://animongo:eTDJLkDMz0UhctTrjYNbj51R8H7JjsTOyKH1SLu9Z1MrWEMNcmWlqZxiKd6hjeZaFeaSz6PkO2i4PhZtbC3Rmw%3D%3D@animongo.documents.azure.com:10255/?ssl=true";
-const mongoHost = 'mongodb://localhost:27017/aniq';
+//const mongoHost = 'mongodb://localhost:27017/aniq';
 
 var certsPath = path.join(__dirname, 'certs', 'server');
 options = {

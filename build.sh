@@ -1,9 +1,9 @@
 #!/bin/bash
 echo "################################################"
-echo "Build server-app image"
+echo "Build anique-api-app image"
 echo "################################################"
 
-sudo docker build -t server-app .
+sudo docker build -t anique-api-app .
 
 echo "################################################"
 echo "Deletes the old dangling images"
